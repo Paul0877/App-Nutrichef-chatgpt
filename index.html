@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nutrichef: recetas saludables, fáciles y deliciosas para preparar en casa.">
+  <meta name="theme-color" content="#173f35">
+  <title>Nutrichef | Cocina rico, vive sano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Nutrichef inicio"><span class="brand-mark">N</span><span>nutri<span>chef</span></span></a>
+    <nav><a href="#recetas">Recetas</a><a href="#beneficios">Nuestro enfoque</a></nav>
+    <a class="header-cta" href="#recetas">Explorar recetas <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> COCINA SALUDABLE, SIN COMPLICACIONES</div>
+        <h1>Come rico.<br><em>Siéntete increíble.</em></h1>
+        <p>Ideas fáciles, ingredientes cotidianos y mucho sabor. Descubre recetas para disfrutar cuidándote, directamente desde tu cocina.</p>
+        <a class="primary-btn" href="#recetas">Descubrir recetas <span>↓</span></a>
+        <div class="hero-note"><div class="avatars"><b>🥑</b><b>🥕</b><b>🍋</b></div><span>Pequeños cambios, grandes sabores.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85" alt="Ensalada fresca y colorida en un plato">
+        <div class="floating-card"><span class="leaf">✳</span><div><strong>Fresco y natural</strong><small>Tu bienestar empieza aquí</small></div></div>
+        <div class="hero-sticker">HECHO<br>EN CASA <span>♡</span></div>
+      </div>
+    </section>
+
+    <section class="intro" id="beneficios">
+      <div><span class="section-kicker">UNA FORMA MÁS RICA DE CUIDARTE</span><h2>Comer saludable<br>también es <em>disfrutar.</em></h2></div>
+      <p>En Nutrichef creemos que cocinar bien no tiene que ser difícil. Por eso reunimos opciones prácticas y equilibradas que puedes preparar con ingredientes fáciles de conseguir.</p>
+      <div class="mini-benefits"><span>✦ Ingredientes simples</span><span>✦ Preparación fácil</span><span>✦ Mucho sabor</span></div>
+    </section>
+
+    <section class="recipes-section" id="recetas">
+      <div class="section-heading">
+        <div><span class="section-kicker">INSPIRACIÓN PARA TU MESA</span><h2>Recetas para <em>todos los días</em></h2></div>
+        <span class="recipe-count">08 RECETAS <i></i></span>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar una receta..." aria-label="Buscar recetas"></label>
+        <div class="filters" role="group" aria-label="Filtrar recetas">
+          <button class="filter active" data-filter="Todas">Todas</button>
+          <button class="filter" data-filter="Desayuno">Desayunos</button>
+          <button class="filter" data-filter="Almuerzo">Almuerzos</button>
+          <button class="filter" data-filter="Cena">Cenas</button>
+          <button class="filter" data-filter="Snack">Snacks</button>
+        </div>
+      </div>
+      <div class="recipe-grid" id="recipeGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos recetas con ese nombre. Prueba otra búsqueda.</p>
+    </section>
+
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>La mejor receta es la que alimenta tu cuerpo<br>y también alegra tu día.</p>
+      <span class="quote-sign">— Nutrichef</span>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">N</span><span>nutri<span>chef</span></span></a>
+    <p>Preparado con cariño, servido con bienestar.</p>
+    <span>© <span id="year"></span> Nutrichef</span>
+  </footer>
+
+  <div class="modal" id="recipeModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-modal" aria-label="Cerrar" data-close>×</button>
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <div class="modal-content">
+        <span class="modal-category" id="modalCategory"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription" class="modal-description"></p>
+        <div class="modal-meta"><span>◷ <b id="modalTime"></b> min</span><span>♧ <b id="modalDifficulty"></b></span><span>♙ <b id="modalServings"></b> porciones</span></div>
+        <div class="modal-columns">
+          <div><h3>Ingredientes</h3><ul id="modalIngredients"></ul></div>
+          <div><h3>Preparación</h3><ol id="modalSteps"></ol></div>
+        </div>
+        <p class="recipe-tip"><strong>Consejo Nutrichef:</strong> acompaña tu receta con agua y ajusta las porciones según tu apetito y necesidades.</p>
+      </div>
+    </article>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

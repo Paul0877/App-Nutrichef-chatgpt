@@ -1,0 +1,42 @@
+const recipes = [
+ {id:1,name:"Bowl de quinoa y aguacate",category:"Almuerzo",time:20,difficulty:"Fácil",servings:2,description:"Un bowl lleno de color con quinoa, vegetales frescos y una salsa cítrica muy sencilla.",image:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85",ingredients:["1 taza de quinoa cocida","1 aguacate en cubos","1 taza de tomate cherry","½ pepino picado","Jugo de ½ limón","1 cucharada de aceite de oliva"],steps:["Lava la quinoa y cocínala siguiendo las indicaciones del paquete.","Corta el aguacate, los tomates y el pepino en trozos pequeños.","Mezcla los ingredientes en un bowl.","Aliña con limón, aceite de oliva y una pizca de sal. Sirve fresco."]},
+ {id:2,name:"Tostadas de aguacate y huevo",category:"Desayuno",time:10,difficulty:"Muy fácil",servings:2,description:"Un desayuno rápido, sabroso y con ingredientes que probablemente ya tienes en casa.",image:"https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85",ingredients:["2 rebanadas de pan integral","1 aguacate maduro","2 huevos","Jugo de limón","Pimienta al gusto"],steps:["Tuesta las rebanadas de pan.","Aplasta el aguacate con unas gotas de limón y pimienta.","Cocina los huevos a tu gusto en una sartén antiadherente.","Unta el aguacate sobre el pan y coloca un huevo encima de cada tostada."]},
+ {id:3,name:"Pollo al limón con verduras",category:"Almuerzo",time:30,difficulty:"Fácil",servings:2,description:"Pechuga jugosa acompañada de vegetales salteados: una comida completa y práctica.",image:"https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=85",ingredients:["2 filetes de pechuga de pollo","1 zanahoria","1 zucchini","½ pimiento","Jugo de 1 limón","1 cucharada de aceite de oliva","Ajo, pimienta y orégano"],steps:["Sazona el pollo con limón, ajo, pimienta y orégano.","Calienta el aceite en una sartén y cocina el pollo hasta que esté bien cocido.","Corta las verduras en tiras y saltéalas durante 5–7 minutos.","Sirve el pollo junto con las verduras."]},
+ {id:4,name:"Smoothie de frutos rojos",category:"Desayuno",time:5,difficulty:"Muy fácil",servings:1,description:"Una bebida cremosa y refrescante, ideal para comenzar el día o disfrutar como merienda.",image:"https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=900&q=85",ingredients:["1 taza de frutos rojos congelados","½ banana","¾ taza de yogur natural","½ taza de leche o bebida vegetal","1 cucharadita de chía (opcional)"],steps:["Coloca los frutos rojos, la banana, el yogur y la leche en la licuadora.","Licúa hasta obtener una mezcla cremosa.","Ajusta la textura agregando un poco más de leche si lo deseas.","Sirve frío y añade chía por encima."]},
+ {id:5,name:"Ensalada mediterránea",category:"Cena",time:15,difficulty:"Muy fácil",servings:2,description:"Una combinación fresca de vegetales, garbanzos y queso para una cena ligera y deliciosa.",image:"https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85",ingredients:["1 taza de garbanzos cocidos","1 pepino","1 taza de tomate","¼ de cebolla morada","¼ taza de queso fresco","Aceite de oliva y limón","Perejil picado"],steps:["Lava y corta el pepino y los tomates.","Corta la cebolla en tiras finas y desmenuza el queso.","Mezcla los vegetales con los garbanzos en un recipiente.","Agrega queso, perejil, aceite de oliva y limón."]},
+ {id:6,name:"Wrap integral de atún",category:"Almuerzo",time:12,difficulty:"Fácil",servings:2,description:"Una opción portátil y nutritiva que combina atún, vegetales crujientes y una salsa de yogur.",image:"https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",ingredients:["2 tortillas integrales","1 lata de atún en agua, escurrido","½ zanahoria rallada","Hojas de lechuga","½ tomate picado","2 cucharadas de yogur natural","Limón y pimienta"],steps:["Mezcla el atún con el yogur, unas gotas de limón y pimienta.","Coloca la lechuga, zanahoria y tomate sobre cada tortilla.","Añade la mezcla de atún en el centro.","Dobla los extremos, enrolla y corta por la mitad."]},
+ {id:7,name:"Pancakes de avena y banana",category:"Desayuno",time:15,difficulty:"Fácil",servings:2,description:"Pancakes suaves y naturalmente dulces, perfectos para un desayuno especial sin complicaciones.",image:"https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=85",ingredients:["1 banana madura","1 huevo","½ taza de avena","¼ taza de leche","½ cucharadita de polvo de hornear","Canela al gusto"],steps:["Aplasta la banana con un tenedor.","Mezcla con el huevo, la avena, la leche, el polvo de hornear y la canela.","Vierte pequeñas porciones en una sartén antiadherente caliente.","Cocina por ambos lados hasta que estén dorados. Sirve con fruta fresca."]},
+ {id:8,name:"Hummus con bastones",category:"Snack",time:10,difficulty:"Muy fácil",servings:3,description:"Un dip cremoso de garbanzos con vegetales frescos para picar entre comidas.",image:"https://images.unsplash.com/photo-1577906096429-f73c2c312435?auto=format&fit=crop&w=900&q=85",ingredients:["1 taza de garbanzos cocidos","1 cucharada de tahini (opcional)","Jugo de ½ limón","1 cucharada de aceite de oliva","½ diente de ajo","Zanahoria y pepino en bastones"],steps:["Coloca los garbanzos, tahini, limón, aceite y ajo en una procesadora.","Procesa hasta obtener una crema; agrega agua poco a poco si hace falta.","Prueba y ajusta el limón o la sal.","Sirve con bastones de zanahoria y pepino."]}
+];
+const grid=document.getElementById("recipeGrid"), search=document.getElementById("searchInput"), empty=document.getElementById("emptyState");
+let activeFilter="Todas";
+function render(){
+ const term=search.value.toLocaleLowerCase("es");
+ const filtered=recipes.filter(r=>(activeFilter==="Todas"||r.category===activeFilter)&&(r.name.toLocaleLowerCase("es").includes(term)||r.description.toLocaleLowerCase("es").includes(term)));
+ grid.innerHTML=filtered.map(r=>`<article class="recipe-card" tabindex="0" role="button" aria-label="Ver receta ${r.name}" data-id="${r.id}">
+ <div class="card-image"><img src="${r.image}" alt="${r.name}" loading="lazy"><span class="card-tag">${r.category.toUpperCase()}</span></div>
+ <div class="card-body"><h3>${r.name}</h3><p>${r.description}</p><div class="card-bottom"><span>◷ ${r.time} min</span><strong>${r.difficulty}</strong><span class="view-link">Ver receta ↗</span></div></div></article>`).join("");
+ empty.hidden=filtered.length!==0;
+ grid.querySelectorAll(".recipe-card").forEach(card=>{card.addEventListener("click",()=>openRecipe(Number(card.dataset.id)));card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openRecipe(Number(card.dataset.id));}})});
+}
+function openRecipe(id){
+ const r=recipes.find(item=>item.id===id);if(!r)return;
+ document.getElementById("modalImage").src=r.image;document.getElementById("modalImage").alt=r.name;
+ document.getElementById("modalCategory").textContent=r.category;
+ document.getElementById("modalTitle").textContent=r.name;
+ document.getElementById("modalDescription").textContent=r.description;
+ document.getElementById("modalTime").textContent=r.time;
+ document.getElementById("modalDifficulty").textContent=r.difficulty;
+ document.getElementById("modalServings").textContent=r.servings;
+ document.getElementById("modalIngredients").innerHTML=r.ingredients.map(x=>`<li>${x}</li>`).join("");
+ document.getElementById("modalSteps").innerHTML=r.steps.map(x=>`<li>${x}</li>`).join("");
+ const modal=document.getElementById("recipeModal");modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";
+ document.querySelector(".close-modal").focus();
+}
+function closeModal(){const modal=document.getElementById("recipeModal");modal.classList.remove("open");modal.setAttribute("aria-hidden","true");document.body.style.overflow="";}
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{document.querySelector(".filter.active").classList.remove("active");btn.classList.add("active");activeFilter=btn.dataset.filter;render()}));
+search.addEventListener("input",render);
+document.querySelectorAll("[data-close]").forEach(el=>el.addEventListener("click",closeModal));
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.getElementById("year").textContent=new Date().getFullYear();
+render();
